@@ -13,7 +13,6 @@ class Navigation extends Component {
               Menu
               <i className="fas fa-bars"></i>
             </Button>
-            
             <Nav className="collapse navbar-collapse" id="navbarResponsive">
               <NavItem eventKey={1} href="#">
                 About
