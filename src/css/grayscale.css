@@ -23,7 +23,6 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
-  padding: .9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -37,7 +36,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -84,7 +83,7 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
-}
+} */
 
 .masthead {
   position: relative;
