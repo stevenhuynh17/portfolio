@@ -7,6 +7,7 @@
 #mainNav {
   min-height: 56px;
   background-color: #fff;
+  padding: .5rem 1
 }
 
 #mainNav .navbar-toggler {
@@ -36,7 +37,7 @@
   background-color: transparent;
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -83,7 +84,7 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
-} */
+}
 
 .masthead {
   position: relative;
@@ -174,12 +175,28 @@
   padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  text-align: center;
+  align-items: center;
+}
+
+.about-section .content {
+  width: 75%;
 }
 
 .about-section p {
   margin-bottom: 5rem;
+  color: white;
 }
 
+.about-section h2 {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+}
 .projects-section {
   padding: 10rem 0;
 }
@@ -305,8 +322,4 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
-}
-
-.test {
-  background-color: red;
 }
