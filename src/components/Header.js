@@ -1,18 +1,21 @@
 import React, { Component } from 'react'
-import { PageHeader } from 'react-bootstrap'
+import { Jumbotron, Button } from 'react-bootstrap'
 
 class Header extends Component {
   render() {
     return(
-      <header className="masthead">
-        <div className="container d-flex h-100 align-items-center">
-          <div className="text-center">
-            <h1 className="text-uppercase">Grayscale</h1>
-            <h2 className="margin-auto">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-            <a href="#about" className="btn btn-primary">Get Started</a>
-          </div>
+      <Jumbotron>
+        <div className="container">
+          <h1>Hello, world!</h1>
+            <p>
+              This is a simple hero unit, a simple jumbotron-style component for calling
+              extra attention to featured content or information.
+            </p>
+          <p>
+            <Button bsStyle="primary">Learn more</Button>
+          </p>
         </div>
-      </header>
+      </Jumbotron>
     )
   }
 }

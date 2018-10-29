@@ -4,7 +4,7 @@ class Project extends Component {
   render() {
     return(
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
+        <div class="col-xl-3 col-lg-7">
           <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt=""/>
         </div>
         <div class="col-xl-4 col-lg-5">
