@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Example1 from '../img/demo-image-01.jpg'
+import Example2 from '../img/demo-image-02.jpg'
 
 class Project extends Component {
   render() {
@@ -6,7 +8,7 @@ class Project extends Component {
       <div>
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt=""/>
+          <img class="img-fluid" src={Example1} alt=""/>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -22,7 +24,7 @@ class Project extends Component {
       </div>
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt=""/>
+          <img class="img-fluid" src={Example2} alt=""/>
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">

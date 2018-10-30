@@ -7,7 +7,6 @@
 #mainNav {
   min-height: 56px;
   background-color: #fff;
-  padding: .5rem 1
 }
 
 #mainNav .navbar-toggler {
@@ -24,6 +23,7 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
+  padding: .9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -113,11 +113,6 @@
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5rem;
-  margin-bottom: 3rem;
-  color: rgba(255,255,255,.5);
 }
 
 @media (min-width: 768px) {
@@ -175,28 +170,12 @@
   padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
-  text-align: center;
-  align-items: center;
-}
-
-.about-section .content {
-  width: 75%;
 }
 
 .about-section p {
   margin-bottom: 5rem;
-  color: white;
 }
 
-.about-section h2 {
-  color: white;
-  margin-bottom: 1.5em;
-}
-
-.about-section img {
-  max-width: 100%;
-  height: auto;
-}
 .projects-section {
   padding: 10rem 0;
 }
@@ -283,11 +262,11 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  /* color: rgba(255, 255, 255, 0.3); */
 }
 
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
 }
 
 .contact-section .social a:active {
@@ -318,6 +297,14 @@ a:focus, a:hover {
 
 .text-primary {
   color: #64a19d !important;
+}
+
+.text-white-50 {
+  color: rgba(255,255,255,.5)!important;
+}
+
+.text-black-50 {
+  color: rgba(0,0,0,.5)!important;
 }
 
 footer {
