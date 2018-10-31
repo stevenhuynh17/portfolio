@@ -164,6 +164,24 @@
   border: 0;
 }
 
+.btn-email {
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+  color: #64a19d;
+}
+
+.btn-email:hover {
+  color: #4f837f;
+}
+
+.btn-email:focus {
+  outline: 0;
+}
+
 .btn-primary {
   background-color: #64a19d;
 }
