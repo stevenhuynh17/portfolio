@@ -19,7 +19,7 @@ class About extends Component {
               </p>
             </div>
           </div>
-          <div className="container">
+          <div className="container mb-5">
             <i className="fab fa-react fa-4x mx-2 text-white-50"></i>
             <svg
               aria-labelledby="simpleicons-redux-icon"
@@ -55,10 +55,11 @@ class About extends Component {
                 </g>
               </g>
             </svg>
-
           </div>
-
         </div>
+          <a href="#projects" className="btn btn-primary js-scroll-trigger">
+            See Projects
+          </a>
       </section>
     )
   }

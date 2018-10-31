@@ -25,7 +25,7 @@ class Contact extends Component {
     const email = "stevenhuynh17@gmail.com"
 
     return(
-      <section className="contact-section bg-black">
+      <section className="contact-section bg-black" id="contact">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-5 mb-3 mb-md-0">
