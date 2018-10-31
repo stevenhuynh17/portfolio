@@ -5,6 +5,7 @@ import Header from './components/Header'
 import About from './components/About'
 import ProjectList from './components/ProjectList'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 import './css/grayscale.css'
 
@@ -17,6 +18,7 @@ class App extends Component {
         <About />
         <ProjectList />
         <Contact />
+        <Footer />
       </div>
     );
   }
