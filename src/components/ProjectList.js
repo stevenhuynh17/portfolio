@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Highlight from '../img/bg-masthead.jpg'
+import Highlight from '../img/bart.png'
 import Project from './Project'
 
 class ProjectList extends Component {
@@ -13,8 +13,18 @@ class ProjectList extends Component {
             </div>
             <div class="col-xl-4 col-lg-5">
               <div class="featured-text text-center text-lg-left">
-                <h4>Shoreline</h4>
-                <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                <h4>BART Station Locator</h4>
+                <ul class="text-black-50 mb-4">
+                  <li>Front end project that utilizes Google Maps and BART API to display all station locations in the Bay Area</li>
+                  <li>Users can find local attractions, food, and shopping nearby each station through the Yelp API</li>
+                </ul>
+                <span class="badge badge-pill badge-secondary">Knockout.js</span>
+                <span class="badge badge-pill badge-secondary">googlemaps-api</span>
+                <span class="badge badge-pill badge-secondary">bart-api</span>
+                <span class="badge badge-pill badge-secondary">yelp-api</span>
+                <span class="badge badge-pill badge-secondary">javaScript</span>
+                <span class="badge badge-pill badge-secondary">html5</span>
+                <span class="badge badge-pill badge-secondary">ccs3</span>
               </div>
             </div>
           </div>
