@@ -1,8 +1,8 @@
 {
-  "name": "stevenhuynh17.github.io",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stevenhuynh17.github.io/stevenhuynh17.github.io",
+  "homepage": "https://stevenhuynh17.github.io/portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
