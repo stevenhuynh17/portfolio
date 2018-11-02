@@ -2,6 +2,14 @@ import React, { Component } from 'react'
 import Project from './Project'
 
 class ProjectList extends Component {
+  renderBadges = (badges) => {
+    return badges.map((badge) => {
+      return(
+        <span class="badge badge-pill badge-secondary">{badge}</span>
+      )
+    })
+  }
+
   render() {
     const data = {
       "featured": {
@@ -34,6 +42,7 @@ class ProjectList extends Component {
         }
       ]
     }
+    const { renderBadges } = this
     const { featured, projects } = data
     const { name, img, description, badges } = featured
 
@@ -54,15 +63,11 @@ class ProjectList extends Component {
                       )
                   })}
                 </ul>
-                { badges.map((result) => {
-                  return(
-                    <span class="badge badge-pill badge-secondary">{result}</span>
-                  )
-                })}
+                { this.renderBadges(badges) }
               </div>
             </div>
           </div>
-          <Project projects={projects}/>
+          <Project projects={projects} renderBadges={renderBadges}/>
         </div>
       </section>
     )
