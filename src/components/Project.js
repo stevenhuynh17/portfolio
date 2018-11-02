@@ -5,7 +5,7 @@ import NearbyNews from '../img/nearbyNews.jpeg'
 class Project extends Component {
   render() {
     const { projects, renderBadges, renderDescription } = this.props
-    //order-lg-first
+
     return(
       <div>
         { projects.map((project, index) => {
