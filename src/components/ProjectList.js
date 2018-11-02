@@ -5,15 +5,15 @@ import Project from './Project'
 class ProjectList extends Component {
   render() {
     const data = {
-      "Featured": {
-        name: "Station Locator",
+      "featured": {
+        name: "BART Station Locator",
         description: [
           "Front end project that utilizes Google Maps and BART API to display all station locations in the Bay Area",
           "Users can find local attractions, food, and shopping nearby each station through the Yelp API"
         ],
         badges: ["Knockout.js", "googlemaps-api", "bart-api", "yelp-api", "javaScript", "html5", "ccs3"]
       },
-      "Projects": [
+      "projects": [
         {
           name: "Car Catalog",
           description: [
@@ -32,9 +32,9 @@ class ProjectList extends Component {
         }
       ]
     }
-    const { featured } = data
+    const { featured, projects } = data
     const { name, description, badges } = featured
-    
+
     return(
       <section id="projects" class="projects-section bg-light">
         <div class="container">
@@ -44,27 +44,23 @@ class ProjectList extends Component {
             </div>
             <div class="col-xl-4 col-lg-5">
               <div class="featured-text text-center text-lg-left">
-                <h4>BART Station Locator</h4>
+                <h4>{name}</h4>
                 <ul class="text-black-50 mb-4">
-                  <li>
-                    Front end project that utilizes Google Maps and BART API to display all station locations in the Bay Area
-                  </li>
-                  <li>
-                    Users can find local attractions, food, and shopping nearby each station through the Yelp API
-                  </li>
+                  { description.map((result) => {
+                      return(
+                        <li>{result}</li>
+                      )
+                  })}
                 </ul>
-                {}
-                <span class="badge badge-pill badge-secondary">Knockout.js</span>
-                <span class="badge badge-pill badge-secondary">googlemaps-api</span>
-                <span class="badge badge-pill badge-secondary">bart-api</span>
-                <span class="badge badge-pill badge-secondary">yelp-api</span>
-                <span class="badge badge-pill badge-secondary">javaScript</span>
-                <span class="badge badge-pill badge-secondary">html5</span>
-                <span class="badge badge-pill badge-secondary">ccs3</span>
+                { badges.map((result) => {
+                  return(
+                    <span class="badge badge-pill badge-secondary">{result}</span>
+                  )
+                })}
               </div>
             </div>
           </div>
-          <Project />
+          <Project projects={projects}/>
         </div>
       </section>
     )
