@@ -6,7 +6,7 @@ import SQLIcon from './SVG/SQLIcon'
 
 class About extends Component {
   render() {
-    const icons = ["fa-react", "fa-html5", "fa-css3-alt", "fa-python", "fa-python", "fa-js-square", "fa-node-js", "fa-aws"]
+    const icons = ["fa-react", "fa-html5", "fa-css3-alt", "fa-python", "fa-js-square", "fa-node-js", "fa-aws"]
     return(
       <section id="about" className="about-section">
         <div className="container text-center d-flex h-100 align-items-center">
@@ -22,13 +22,11 @@ class About extends Component {
             </div>
             <div className="mb-5">
               <ReduxIcon />
-              <i className="fab fa-react fa-4x mx-3 text-white-50"></i>
-              <i className="fab fa-html5 fa-4x mx-3 text-white-50"></i>
-              <i className="fab fa-css3-alt fa-4x mx-3 text-white-50"></i>
-              <i className="fab fa-python fa-4x mx-3 text-white-50"></i>
-              <i className="fab fa-js-square fa-4x mx-3 text-white-50"></i>
-              <i className="fab fa-node-js fa-4x mx-3 text-white-50"></i>
-              <i className="fab fa-aws fa-4x mx-3 text-white-50"></i>
+              {icons.map((data) => {
+                return(
+                  <i className={"fab fa-4x mx-3 text-white-50 " + data}></i>
+                )
+              })}
               <SQLIcon />
             </div>
             <div>
