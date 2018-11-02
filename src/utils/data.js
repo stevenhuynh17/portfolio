@@ -43,10 +43,47 @@ export const data = {
       name: "Nearby News",
       img: "img/nearbyNews.jpeg",
       description: [
-        "Full-stack project built with React, Node.js/Express, MySQL, Watson API and deployed through AWS EC2",
+        "Full-stack team project utilizing React, Node.js/Express, MySQL, Watson API and deployed through AWS EC2",
         "Users search news based on the location input where results are displayed in GIFs with visual cues to indicate a sentiment rating"
       ],
-      badges: ["React", "Node.js", "Express", "MySQL", "AWS", "watson-api", "html5", "ccs3"]
+      badges: ["React", "Node.js", "Express", "MySQL", "AWS", "watson-api", "javaScript", "html5", "ccs3"]
+    },
+    {
+      name: "Mobile Flashcards",
+      img: "",
+      description: [
+        "Front-end project built with React Native, Redux and rendered through Expo",
+        "Users get a daily notifcation to study and perform CRUD functions with subjects through AsyncStorage"
+      ],
+      badges: ["react-native", "redux", "android", "ios", "javaScript", "html5", "ccs3"]
+    },
+    {
+      name: "Would You Rather?",
+      img: "",
+      description: [
+        "Front-end project built with React, Redux and associated libraries",
+        "Centralized state management through Redux and navigation between pages with react-router",
+        "Users can login to participate in the polls and perform CRUD functions"
+      ],
+      badges: ["react", "redux", "javaScript", "html5", "ccs3"]
+    },
+    {
+      name: "Geostashing",
+      img: "",
+      description: [
+        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
+        "Users can look up random items, transaction occurs online while the seller can stash the sold item in an obscure location"
+      ],
+      badges: ["react", "node-js", "express", "postgres-sql", "javaScript", "html5", "ccs3"]
+    },
+    {
+      name: "My Reads",
+      img: "",
+      description: [
+        "Front-end project built with React",
+        "Users can add and shift books between 3 shelves: Currently Reading, Want to Read and Read"
+      ],
+      badges: ["react", "javaScript", "html5", "ccs3"]
     }
   ]
 }
