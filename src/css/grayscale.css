@@ -357,3 +357,7 @@ footer {
   color: rgba(0,0,0,.5)!important;
   font-size: 4em;
 }
+
+.project {
+  height: fit-content;
+}

@@ -4,23 +4,16 @@ import NearbyNews from '../img/nearbyNews.jpeg'
 
 class Project extends Component {
   render() {
-    const data = {
-      "CarCatalog": {
-        name: "Car Catalog",
-        description: [
-          "Full-stack project using Python, Flask, SQLAlchemy and deployed through AWS Lightsail",
-          "Users login via OAuth with their Google accounts to perform CRUD functions on their respective brands and/or models"
-        ],
-        badges: ["Python", "Flask", "SQLAlchemy", "OAuth", "AWS", "html5", "ccs3"]
-      }
-    }
-    console.log(data.CarCatalog)
+    const { projects } = this.props
 
     return(
       <div>
-      <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+        {
+
+        }
+      <div className="row justify-content-center no-gutters">
         <div className="col-lg-6">
-          <img className="img-fluid" src={CarCatalog} alt=""/>
+          <img className="img-fluid project" src={CarCatalog} alt=""/>
         </div>
         <div className="col-lg-6">
           <div className="bg-black text-center h-100 project">
@@ -47,7 +40,7 @@ class Project extends Component {
       </div>
       <div className="row justify-content-center no-gutters">
         <div className="col-lg-6">
-          <img className="img-fluid" src={NearbyNews} alt=""/>
+          <img className="img-fluid project" src={NearbyNews} alt=""/>
         </div>
         <div className="col-lg-6 order-lg-first">
           <div className="bg-black text-center h-100 project">
