@@ -1,18 +1,10 @@
 import React, { Component } from 'react'
 import { Jumbotron, Button } from 'react-bootstrap'
+import { data } from '../utils/data'
 
 class Header extends Component {
   render() {
-    const data = {
-      name: "Steven Huynh",
-      content: "I am a full-stack web developer, athlete, chef, gamer and nerd.",
-      quote: {
-        author: "Fred Rogers",
-        content: '"There is no normal life that is free of pain. It’s the very wrestling with our problems that can be the impetus for our growth."'
-      },
-      button: "Find Out More"
-    }
-    const { name, content, quote, button } = data
+    const { name, content, quote, button } = data.header
 
     return(
       <header className="masthead">

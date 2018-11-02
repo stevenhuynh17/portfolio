@@ -3,19 +3,11 @@ import { Jumbotron, Button } from 'react-bootstrap'
 import Background from '../img/close-up-laptop.jpg'
 import ReduxIcon from './SVG/ReduxIcon'
 import SQLIcon from './SVG/SQLIcon'
+import { data } from '../utils/data'
 
 class About extends Component {
   render() {
-    const data = {
-      title: "About",
-      content: "I enjoy making code functional, connecting dots, seeing the\
-       logic flow, and bringing the contents to life. My journey so far \
-       includes attending Hack Reactor in San Francisco and completing \
-       Udacity's Full-Stack Developer and React Nanodegree.",
-      icons: ["fa-react", "fa-html5", "fa-css3-alt", "fa-python", "fa-js-square", "fa-node-js", "fa-aws"],
-      button: "See Projects"
-    }
-    const { title, content, icons, button } = data
+    const { title, content, icons, button } = data.about
 
     return(
       <section id="about" className="about-section">
@@ -31,7 +23,7 @@ class About extends Component {
               <ReduxIcon />
               {icons.map((data) => {
                 return(
-                  <i className={"fab fa-4x mx-3 text-white-50 " + data}></i>
+                  <i key={data} className={"fab fa-4x mx-3 text-white-50 " + data}></i>
                 )
               })}
               <SQLIcon />
