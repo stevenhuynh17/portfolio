@@ -6,10 +6,11 @@ import SQLIcon from './SVG/SQLIcon'
 
 class About extends Component {
   render() {
+    const icons = ["fa-react", "fa-html5", "fa-css3-alt", "fa-python", "fa-python", "fa-js-square", "fa-node-js", "fa-aws"]
     return(
-      <section id="about" className="about-section text-center">
-        <div className="container">
-          <div className="row">
+      <section id="about" className="about-section">
+        <div className="container text-center d-flex h-100 align-items-center">
+          <section>
             <div className="col-lg-8 mx-auto">
               <h2 className="text-white mb-4">About</h2>
               <p className="text-white-50">
@@ -19,22 +20,24 @@ class About extends Component {
                 and completing Udacity's Full-Stack Developer and React Nanodegree.
               </p>
             </div>
-          </div>
-          <div className="container mb-5">
-            <i className="fab fa-react fa-4x mx-2 text-white-50"></i>
-            <ReduxIcon />
-            <i className="fab fa-html5 fa-4x mx-3 text-white-50"></i>
-            <i className="fab fa-css3-alt fa-4x mx-3 text-white-50"></i>
-            <i className="fab fa-python fa-4x mx-3 text-white-50"></i>
-            <i className="fab fa-js-square fa-4x mx-3 text-white-50"></i>
-            <i className="fab fa-node-js fa-4x mx-3 text-white-50"></i>
-            <i className="fab fa-aws fa-4x mx-3 text-white-50"></i>
-            <SQLIcon />
-          </div>
+            <div className="mb-5">
+              <ReduxIcon />
+              <i className="fab fa-react fa-4x mx-3 text-white-50"></i>
+              <i className="fab fa-html5 fa-4x mx-3 text-white-50"></i>
+              <i className="fab fa-css3-alt fa-4x mx-3 text-white-50"></i>
+              <i className="fab fa-python fa-4x mx-3 text-white-50"></i>
+              <i className="fab fa-js-square fa-4x mx-3 text-white-50"></i>
+              <i className="fab fa-node-js fa-4x mx-3 text-white-50"></i>
+              <i className="fab fa-aws fa-4x mx-3 text-white-50"></i>
+              <SQLIcon />
+            </div>
+            <div>
+              <a href="#projects" className="btn btn-primary js-scroll-trigger">
+                See Projects
+              </a>
+            </div>
+          </section>
         </div>
-          <a href="#projects" className="btn btn-primary js-scroll-trigger">
-            See Projects
-          </a>
       </section>
     )
   }
