@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Jumbotron, Button } from 'react-bootstrap'
 import { data } from '../utils/data'
 
 class Header extends Component {

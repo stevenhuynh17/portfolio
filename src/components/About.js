@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { Jumbotron, Button } from 'react-bootstrap'
-import Background from '../img/close-up-laptop.jpg'
 import ReduxIcon from './SVG/ReduxIcon'
 import SQLIcon from './SVG/SQLIcon'
 import { data } from '../utils/data'

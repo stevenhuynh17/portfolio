@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import CarCatalog from '../img/carCatalog.png'
-import NearbyNews from '../img/nearbyNews.jpeg'
 
 class Project extends Component {
   render() {
@@ -13,7 +11,7 @@ class Project extends Component {
             const swap = index % 2 === 0 ? "col-lg-6" : "col-lg-6 order-lg-first"
 
             return(
-              <div className="row justify-content-center no-gutters">
+              <div key={name} className="row justify-content-center no-gutters">
                 <div className="col-lg-6">
                   <img className="img-fluid project" src={require("../" + img)} alt=""/>
                 </div>

@@ -6,15 +6,15 @@ class ProjectList extends Component {
   renderBadges = (badges) => {
     return badges.map((badge) => {
       return(
-        <span class="badge badge-pill badge-secondary">{badge}</span>
+        <span key={badge} className="badge badge-pill badge-secondary">{badge}</span>
       )
     })
   }
 
   renderDescription = (data) => {
-    return data.map((result) => {
+    return data.map((result, index) => {
       return(
-        <li>{result}</li>
+        <li key={index}>{result}</li>
       )
     })
   }
@@ -25,7 +25,7 @@ class ProjectList extends Component {
     const { name, img, description, badges } = featured
 
     return(
-      <section id="projects" class="projects-section bg-light">
+      <section id="projects" className="projects-section bg-light">
         <div className="container">
           <div className="row align-items-center no-gutters mb-4 mb-lg-5">
             <div className="col-xl-8 col-lg-7">

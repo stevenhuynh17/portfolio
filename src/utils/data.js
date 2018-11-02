@@ -10,12 +10,15 @@ export const data = {
   },
   "about": {
     title: "About",
-    content: "I enjoy making code functional, connecting dots, seeing the\
-     logic flow, and bringing the contents to life. My journey so far \
-     includes attending Hack Reactor in San Francisco and completing \
-     Udacity's Full-Stack Developer and React Nanodegree.",
+    content: "I enjoy making code functional, connecting dots, seeing the logic flow, and bringing the contents to life. My journey so far \n" +
+      "includes attending Hack Reactor in San Francisco and completing Udacity's Full-Stack Developer and React Nanodegree.",
     icons: ["fa-react", "fa-html5", "fa-css3-alt", "fa-python", "fa-js-square", "fa-node-js", "fa-aws"],
     button: "See Projects"
+  },
+  "contact": {
+    linkedin: "https://www.linkedin.com/in/stevenhuynh17/",
+    github: "https://github.com/stevenhuynh17",
+    email: "stevenhuynh17@gmail.com"
   },
   "featured": {
     name: "BART Station Locator",
@@ -37,13 +40,13 @@ export const data = {
       badges: ["Python", "Flask", "SQLAlchemy", "OAuth", "AWS", "html5", "ccs3"]
     },
     {
-      name: "Car Catalog",
+      name: "Nearby News",
       img: "img/nearbyNews.jpeg",
       description: [
-        "Full-stack project using Python, Flask, SQLAlchemy and deployed through AWS Lightsail",
-        "Users login via OAuth with their Google accounts to perform CRUD functions on their respective brands and/or models"
+        "Full-stack project built with React, Node.js/Express, MySQL, Watson API and deployed through AWS EC2",
+        "Users search news based on the location input where results are displayed in GIFs with visual cues to indicate a sentiment rating"
       ],
-      badges: ["Python", "Flask", "SQLAlchemy", "OAuth", "AWS", "html5", "ccs3"]
+      badges: ["React", "Node.js", "Express", "MySQL", "AWS", "watson-api", "html5", "ccs3"]
     }
   ]
 }

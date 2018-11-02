@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Footer from './Footer'
+import { data } from '../utils/data'
 
 class Contact extends Component {
   state = {
@@ -20,9 +20,7 @@ class Contact extends Component {
 
   render() {
     const { copied } = this.state
-    const linkedin = "https://www.linkedin.com/in/stevenhuynh17/"
-    const github = "https://github.com/stevenhuynh17"
-    const email = "stevenhuynh17@gmail.com"
+    const { linkedin, github, email } = data.contact
 
     return(
       <section className="contact-section bg-black" id="contact">
@@ -35,7 +33,7 @@ class Contact extends Component {
                   <h4 className="text-uppercase m-0">Email</h4>
                   <hr className="my-4"/>
                   <div className="small text-black-50">
-                    <button type="button" class="btn-email" value={email} onClick={this.copyToClipboard}>
+                    <button type="button" className="btn-email" value={email} onClick={this.copyToClipboard}>
                       {copied ? "Copied to clipboard!" : email}
                     </button>
                   </div>
@@ -44,7 +42,7 @@ class Contact extends Component {
                       <i className="fab fa-github fa-2x"></i>
                     </a>
                     <a href={linkedin} target="_blank" className="mx-2">
-                      <i class="fab fa-linkedin fa-2x"></i>
+                      <i className="fab fa-linkedin fa-2x"></i>
                     </a>
                   </div>
                 </div>
