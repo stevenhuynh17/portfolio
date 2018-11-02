@@ -10,6 +10,14 @@ class ProjectList extends Component {
     })
   }
 
+  renderDescription = (data) => {
+    return data.map((result) => {
+      return(
+        <li>{result}</li>
+      )
+    })
+  }
+
   render() {
     const data = {
       "featured": {
@@ -42,32 +50,31 @@ class ProjectList extends Component {
         }
       ]
     }
-    const { renderBadges } = this
+    const { renderBadges, renderDescription } = this
     const { featured, projects } = data
     const { name, img, description, badges } = featured
 
     return(
       <section id="projects" class="projects-section bg-light">
-        <div class="container">
-          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-            <div class="col-xl-8 col-lg-7">
-              <img class="img-fluid mb-3 mb-lg-0" src={require("../" + img)} alt=""/>
+        <div className="container">
+          <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div className="col-xl-8 col-lg-7">
+              <img className="img-fluid mb-3 mb-lg-0" src={require("../" + img)} alt=""/>
             </div>
-            <div class="col-xl-4 col-lg-5">
-              <div class="featured-text text-center text-lg-left">
+            <div className="col-xl-4 col-lg-5">
+              <div className="featured-text text-center text-lg-left">
                 <h4>{name}</h4>
-                <ul class="text-black-50 mb-4">
-                  { description.map((result) => {
-                      return(
-                        <li>{result}</li>
-                      )
-                  })}
+                <ul className="text-black-50 mb-4">
+                  { renderDescription(description) }
                 </ul>
-                { this.renderBadges(badges) }
+                { renderBadges(badges) }
               </div>
             </div>
           </div>
-          <Project projects={projects} renderBadges={renderBadges}/>
+          <Project
+            projects={projects}
+            renderBadges={renderBadges}
+            renderDescription={renderDescription}/>
         </div>
       </section>
     )

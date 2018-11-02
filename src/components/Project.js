@@ -4,7 +4,7 @@ import NearbyNews from '../img/nearbyNews.jpeg'
 
 class Project extends Component {
   render() {
-    const { projects } = this.props
+    const { projects, renderBadges, renderDescription } = this.props
     //order-lg-first
     return(
       <div>
@@ -23,20 +23,10 @@ class Project extends Component {
                       <div className="project-text w-100 my-auto text-center text-lg-left">
                         <h4 className="text-white">{name}</h4>
                           <ul className="mb-0 text-white-50">
-                            { description.map((info) => {
-                                return(
-                                  <li>{info}</li>
-                                )
-                              })
-                            }
+                            { renderDescription(description) }
                           </ul>
                         <hr className="d-none d-lg-block mb-4 ml-0"/>
-                        { badges.map((info) => {
-                            return(
-                              <span class="badge badge-pill badge-secondary">{info}</span>
-                            )
-                          })
-                        }
+                        { renderBadges(badges) }
                       </div>
                     </div>
                   </div>
