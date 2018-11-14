@@ -13,7 +13,6 @@ class Navigation extends Component {
   }
 
   navbarCollapse = (event) => {
-
     if(window.pageYOffset > 100) {
       this.setState({
         hide: true

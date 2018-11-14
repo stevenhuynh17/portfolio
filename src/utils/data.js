@@ -50,7 +50,7 @@ export const data = {
     },
     {
       name: "Mobile Flashcards",
-      img: "",
+      img: ["img/flashcards/1.png", "img/flashcards/2.png", "img/flashcards/3.png", "img/flashcards/4.png"],
       description: [
         "Front-end project built with React Native, Redux and rendered through Expo",
         "Users get a daily notifcation to study and perform CRUD functions with subjects through AsyncStorage"

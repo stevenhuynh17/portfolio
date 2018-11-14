@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Carousel from './Carousel'
 
 class Project extends Component {
   render() {
@@ -9,11 +10,13 @@ class Project extends Component {
         { projects.map((project, index) => {
             const { name, img, description, badges } = project
             const swap = index % 2 === 0 ? "col-lg-6" : "col-lg-6 order-lg-first"
-
+            console.log(Array.isArray(img))
             return(
               <div key={name} className="row justify-content-center no-gutters">
                 <div className="col-lg-6">
-                  <img className="img-fluid project" src={require("../" + img)} alt=""/>
+                  {
+                    Array.isArray(img) ? <Carousel images={img} name={name} index={index}/> : <img className="img-fluid project" src={require("../" + img)} alt=""/>
+                  }
                 </div>
                 <div className={swap}>
                   <div className="bg-black text-center h-100 project">
