@@ -28,10 +28,13 @@ class Navigation extends Component {
     let navbar = this.state.hide
       ? "navbar navbar-expand-lg navbar-light fixed-top navbar-shrink"
       : "navbar navbar-expand-lg navbar-light fixed-top"
+
+    const { about, header, projects, contact } = this.props.sections
+
     return (
       <nav className={navbar} id="mainNav" onScroll={this.navbarCollapse}>
       <div className="container">
-        <a className="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <a className="navbar-brand" onClick={() => this.props.scroll(header)}>Home</a>
         <button
           className="navbar-toggler navbar-toggler-right"
           type="button"
@@ -45,13 +48,13 @@ class Navigation extends Component {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about">About</a>
+              <a className="nav-link" onClick={() => this.props.scroll(about)}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a className="nav-link" onClick={() => this.props.scroll(projects)}>Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a className="nav-link" onClick={() => this.props.scroll(contact)}>Contact</a>
             </li>
           </ul>
         </div>

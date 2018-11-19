@@ -21,9 +21,10 @@ class Contact extends Component {
   render() {
     const { copied } = this.state
     const { linkedin, github, email } = data.contact
+    const { refProp } = this.props
 
     return(
-      <section className="contact-section bg-black" id="contact">
+      <section className="contact-section bg-black" id="contact" ref={refProp}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-5 mb-3 mb-md-0">

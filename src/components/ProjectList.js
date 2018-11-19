@@ -23,9 +23,10 @@ class ProjectList extends Component {
     const { renderBadges, renderDescription } = this
     const { featured, projects } = data
     const { name, img, description, badges } = featured
+    const { refProp } = this.props
 
     return(
-      <section id="projects" className="projects-section bg-light">
+      <section id="projects" className="projects-section bg-light" ref={refProp}>
         <div className="container">
           <div className="row align-items-center no-gutters mb-4 mb-lg-5">
             <div className="col-xl-8 col-lg-7">

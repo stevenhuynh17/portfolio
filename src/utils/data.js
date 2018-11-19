@@ -3,8 +3,8 @@ export const data = {
     name: "Steven Huynh",
     content: "I am a full-stack web developer, athlete, chef, gamer and nerd.",
     quote: {
-      author: "Fred Rogers",
-      content: '"There is no normal life that is free of pain. It’s the very wrestling with our problems that can be the impetus for our growth."'
+      author: "Bill Gates",
+      content: '"Software is a great combination between artistry and engineering."'
     },
     button: "Find Out More"
   },
@@ -76,14 +76,5 @@ export const data = {
       ],
       badges: ["react", "node-js", "express", "postgres-sql", "javaScript", "html5", "ccs3"]
     },
-    {
-      name: "My Reads",
-      img: "",
-      description: [
-        "Front-end project built with React",
-        "Users can add and shift books between 3 shelves: Currently Reading, Want to Read and Read"
-      ],
-      badges: ["react", "javaScript", "html5", "ccs3"]
-    }
   ]
 }
