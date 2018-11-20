@@ -47,14 +47,14 @@ class Navigation extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" onClick={() => this.props.scroll(about)}>About</a>
+            <li className="nav-item" onClick={(event) => this.props.scroll(about)}>
+              <a className="nav-link" href="#about">About</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" onClick={() => this.props.scroll(projects)}>Projects</a>
+            <li className="nav-item" onClick={() => this.props.scroll(projects)}>
+              <a className="nav-link" href="#projects">Projects</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" onClick={() => this.props.scroll(contact)}>Contact</a>
+            <li className="nav-item" onClick={() => this.props.scroll(contact)}>
+              <a className="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
