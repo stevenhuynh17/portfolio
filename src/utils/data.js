@@ -31,6 +31,15 @@ export const data = {
   },
   "projects": [
     {
+      name: "BART Station Locator",
+      img: "img/bart.png",
+      description: [
+        "Front end project that utilizes Google Maps and BART API to display all station locations in the Bay Area",
+        "Users can find local attractions, food, and shopping nearby each station through the Yelp API"
+      ],
+      badges: ["Knockout.js", "googlemaps-api", "bart-api", "yelp-api", "javaScript", "html5", "ccs3"]
+    },
+    {
       name: "Car Catalog",
       img: "img/carCatalog.png",
       description: [
@@ -50,7 +59,7 @@ export const data = {
     },
     {
       name: "Mobile Flashcards",
-      img: ["img/flashcards/1.png", "img/flashcards/2.png", "img/flashcards/3.png", "img/flashcards/4.png"],
+      img: "",
       description: [
         "Front-end project built with React Native, Redux and rendered through Expo",
         "Users get a daily notifcation to study and perform CRUD functions with subjects through AsyncStorage"

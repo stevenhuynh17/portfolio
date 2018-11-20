@@ -18,7 +18,8 @@ class App extends Component {
     this.contact = React.createRef()
   }
 
-  scrollToMyRef = (section) => {
+  scrollToMyRef = (event, section) => {
+    event.preventDefault()
     window.scrollTo({
       top: section.current.offsetTop,
       behavior: "smooth"
