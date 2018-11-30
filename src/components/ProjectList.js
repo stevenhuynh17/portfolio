@@ -22,12 +22,11 @@ class ProjectList extends Component {
   render() {
     const { renderBadges, renderDescription } = this
     const { featured, projects } = data
-    const { name, img, description, badges } = featured
     const { refProp } = this.props
-    console.log(projects)
+
     return(
-      <section class="p-0" id="projects" ref={refProp}>
-        <div class="container-fluid p-0">
+      <section className="p-0" id="projects" ref={refProp}>
+        <div className="container-fluid p-0">
             <Project projects={projects}/>
         </div>
       </section>

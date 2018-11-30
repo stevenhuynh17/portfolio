@@ -6,19 +6,19 @@ class Project extends Component {
     const { projects, renderBadges, renderDescription } = this.props
     console.log(projects)
     return(
-      <div class="row no-gutters popup-gallery">
+      <div className="row no-gutters popup-gallery">
       { projects.map((project) => {
           const { name, img, description, badges } = project
           return(
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-                <img class="img-fluid" src={require("../" + img)} alt=""/>
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
+            <div className="col-lg-4 col-sm-6 project" key={name}>
+              <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+                <img className="img-fluid" src={require("../" + img)} alt=""/>
+                <div className="portfolio-box-caption">
+                  <div className="portfolio-box-caption-content">
+                    <div className="project-category text-faded">
                       Category
                     </div>
-                    <div class="project-name">
+                    <div className="project-name">
                       {name}
                     </div>
                   </div>

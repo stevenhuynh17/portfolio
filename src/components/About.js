@@ -27,7 +27,7 @@ class About extends Component {
               })}
               <SQLIcon />
             </div>
-            <button onClick={() => scroll(section)} className="btn btn-primary">{button}</button>
+            <button onClick={(event) => scroll(event, section)} className="btn btn-primary">{button}</button>
           </section>
         </div>
       </section>

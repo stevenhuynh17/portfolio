@@ -24,7 +24,7 @@ class Header extends Component {
             <p className="text-white-50 mx-auto mt-2 mb-5">
               - {quote.author}
             </p>
-            <button onClick={() => scroll(section)} className="btn btn-primary">{button}</button>
+            <button onClick={(event) => scroll(event, section)} className="btn btn-primary">{button}</button>
           </div>
         </div>
       </header>

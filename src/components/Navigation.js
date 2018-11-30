@@ -29,6 +29,7 @@ class Navigation extends Component {
       ? "navbar navbar-expand-lg navbar-light fixed-top navbar-shrink"
       : "navbar navbar-expand-lg navbar-light fixed-top"
 
+    const { scroll } = this.props
     const { about, header, projects, contact } = this.props.sections
 
     return (
@@ -47,13 +48,13 @@ class Navigation extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item" onClick={(event) => this.props.scroll(event, about)}>
+            <li className="nav-item" onClick={(event) => scroll(event, about)}>
               <a className="nav-link" href="#about">About</a>
             </li>
-            <li className="nav-item" onClick={(event) => this.props.scroll(event, projects)}>
+            <li className="nav-item" onClick={(event) => scroll(event, projects)}>
               <a className="nav-link" href="#projects">Projects</a>
             </li>
-            <li className="nav-item" onClick={(event) => this.props.scroll(event, contact)}>
+            <li className="nav-item" onClick={(event) => scroll(event, contact)}>
               <a className="nav-link" href="#contact">Contact</a>
             </li>
           </ul>

@@ -59,7 +59,7 @@ export const data = {
     },
     {
       name: "Mobile Flashcards",
-      img: "",
+      img: "img/flashcards/1.png",
       description: [
         "Front-end project built with React Native, Redux and rendered through Expo",
         "Users get a daily notifcation to study and perform CRUD functions with subjects through AsyncStorage"
@@ -68,7 +68,7 @@ export const data = {
     },
     {
       name: "Would You Rather?",
-      img: "",
+      img: "img/choiceGame/1.png",
       description: [
         "Front-end project built with React, Redux and associated libraries",
         "Centralized state management through Redux and navigation between pages with react-router",
@@ -78,7 +78,7 @@ export const data = {
     },
     {
       name: "Geostashing",
-      img: "",
+      img: "img/geoStashing.jpeg",
       description: [
         "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
         "Users can look up random items, transaction occurs online while the seller can stash the sold item in an obscure location"
