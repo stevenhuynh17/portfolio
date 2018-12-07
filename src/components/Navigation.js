@@ -35,7 +35,7 @@ class Navigation extends Component {
     return (
       <nav className={navbar} id="mainNav" onScroll={this.navbarCollapse}>
       <div className="container">
-        <a className="navbar-brand" onClick={() => this.scroll(header)}>Home</a>
+        <a className="navbar-brand" onClick={(event) => scroll(header, about)}>Home</a>
         <button
           className="navbar-toggler navbar-toggler-right"
           type="button"
