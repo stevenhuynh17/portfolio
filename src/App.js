@@ -20,10 +20,19 @@ class App extends Component {
 
   scrollToMyRef = (event, section) => {
     event.preventDefault()
-    window.scrollTo({
-      top: section.current.offsetTop,
-      behavior: "smooth"
-    })
+    console.log(section.current.offsetTop)
+    if(section.current.id === "projects") {
+      window.scrollTo({
+        top: section.current.offsetTop,
+        behavior: "smooth"
+      })
+    } else {
+      window.scrollTo({
+        top: section.current.offsetTop,
+        behavior: "smooth"
+      })
+    }
+
   }
 
   render() {

@@ -25,7 +25,7 @@ class ProjectList extends Component {
     const { refProp } = this.props
 
     return(
-      <section className="p-0" id="projects" ref={refProp}>
+      <section className="" id="projects" ref={refProp}>
         <div className="container-fluid p-0">
             <Project projects={projects}/>
         </div>

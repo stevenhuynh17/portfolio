@@ -12,8 +12,9 @@ class Project extends Component {
           return(
             <div className="col-lg-4 col-sm-6 project" key={name}>
               <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-                <img className="img-fluid" src={require("../" + img)} alt=""/>
+                <img className="img-fluid project-img" src={require("../" + img)} alt=""/>
                 <div className="portfolio-box-caption">
+
                   <div className="portfolio-box-caption-content">
                     <div className="project-category text-faded">
                       Category
