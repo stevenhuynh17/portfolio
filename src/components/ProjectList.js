@@ -20,8 +20,7 @@ class ProjectList extends Component {
   }
 
   render() {
-    const { renderBadges, renderDescription } = this
-    const { featured, projects } = data
+    const { projects } = data
     const { refProp } = this.props
 
     return(

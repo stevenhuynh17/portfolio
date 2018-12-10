@@ -20,7 +20,6 @@ class App extends Component {
 
   scrollToMyRef = (event, section) => {
     event.preventDefault()
-    console.log(section.current.offsetTop)
     if(section.current.id === "projects") {
       window.scrollTo({
         top: section.current.offsetTop,
@@ -37,7 +36,6 @@ class App extends Component {
 
   render() {
     const { about, header, projects, contact } = this
-    console.log(about)
     const sections = {
       about: about,
       header: header,

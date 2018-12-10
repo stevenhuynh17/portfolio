@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
-import Carousel from './Carousel'
 
 class Project extends Component {
+  openModal = (event) => {
+    event.preventDefault()
+    console.log(this, event)
+  }
+
   render() {
-    const { projects, renderBadges, renderDescription } = this.props
-    console.log(projects)
+    const { projects } = this.props
     return(
       <div className="row no-gutters popup-gallery">
       { projects.map((project) => {
-          const { name, img, description, badges } = project
+          const { name, img } = project
           return(
             <div className="col-lg-4 col-sm-6 project" key={name}>
-              <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <button className="portfolio-box" onClick={this.openModal}>
                 <img className="img-fluid project-img" src={require("../" + img)} alt=""/>
                 <div className="portfolio-box-caption">
 
@@ -24,7 +27,7 @@ class Project extends Component {
                     </div>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
           )
       })}
