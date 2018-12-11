@@ -11,10 +11,11 @@ class Project extends Component {
     modalActive: false
   }
 
-  openModal = (event) => {
+  toggleModal = (event) => {
     event.preventDefault()
+    console.log("TESTTTT")
     this.setState({
-      modalActive: true
+      modalActive: !this.state.modalActive
     })
   }
 
@@ -26,7 +27,7 @@ class Project extends Component {
           const { name, img } = project
           return(
             <div className="col-lg-4 col-sm-6 project" key={name}>
-              <button className="portfolio-box" onClick={this.openModal}>
+              <button className="portfolio-box" onClick={this.toggleModal}>
                 <img className="img-fluid project-img" src={require("../" + img)} alt=""/>
                 <div className="portfolio-box-caption">
 
@@ -43,7 +44,7 @@ class Project extends Component {
             </div>
           )
       })}
-      {this.state.modalActive === false ? <div></div> : <LightBox />}
+      {this.state.modalActive === false ? <div></div> : <LightBox handleClick={this.toggleModal}/>}
       </div>
     )
   }

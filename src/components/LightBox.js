@@ -6,7 +6,7 @@ class LightBox extends Component {
     return(
       <div id="myModal-active" className="modal">
         <h1>TESTINGGG</h1>
-        
+        <span className="close cursor" onClick={this.props.handleClick}>&times;</span>
       </div>
     )
   }
