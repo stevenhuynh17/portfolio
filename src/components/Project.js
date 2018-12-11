@@ -1,9 +1,21 @@
 import React, { Component } from 'react'
+import LightBox from './LightBox'
 
 class Project extends Component {
+  constructor(props) {
+    super(props)
+    console.log(props)
+  }
+
+  state = {
+    modalActive: false
+  }
+
   openModal = (event) => {
     event.preventDefault()
-    console.log(this, event)
+    this.setState({
+      modalActive: true
+    })
   }
 
   render() {
@@ -31,6 +43,7 @@ class Project extends Component {
             </div>
           )
       })}
+      {this.state.modalActive === false ? <div></div> : <LightBox />}
       </div>
     )
   }
