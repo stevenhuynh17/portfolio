@@ -6,15 +6,7 @@ const modalRoot = document.getElementById('root')
 class LightBox extends Component {
   componentDidMount() {
     console.log(this.props.projects)
-    window.addEventListener("keydown", (event) => {
-      switch (event.key) {
-        case "Escape":
-          this.props.handleClick()
-          // window.removeEventListener()
-          break;
-        default:
-      }
-    }, {once:true})
+    window.addEventListener("keydown", this.handleKeyPress)
 
     this.setState({
       current: this.props.projects[this.props.index],
@@ -26,6 +18,16 @@ class LightBox extends Component {
   state = {
     current: "",
     index: ""
+  }
+
+  handleKeyPress = (event) => {
+    switch (event.key) {
+      case "Escape":
+        this.props.handleClick()
+        window.removeEventListener("keydown", this.handleKeyPress)
+        break;
+      default:
+    }
   }
 
   updateModal = (event, update) => {
@@ -44,6 +46,11 @@ class LightBox extends Component {
     })
   }
 
+  exit = () => {
+    this.props.handleClick()
+    window.removeEventListener("keydown", this.handleKeyPress)
+  }
+
   render() {
     console.log(this.state.current)
     return ReactDOM.createPortal(
@@ -52,7 +59,7 @@ class LightBox extends Component {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLongTitle">{this.state.current.name}</h5>
-              <button type="button" className="close" onClick={this.props.handleClick} data-dismiss="modal" aria-label="Close">
+              <button type="button" className="close" onClick={this.exit} data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>

@@ -13,6 +13,7 @@ class Project extends Component {
 
   toggleModal = (event, index) => {
     // event.preventDefault()
+    console.log("TESTING")
     if(document.body.style.overflow === "hidden") {
       document.body.style.overflow = "scroll"
     } else {
@@ -38,7 +39,6 @@ class Project extends Component {
                 <div className="portfolio-box-caption">
                   <div className="portfolio-box-caption-content">
                     <div className="project-category text-faded">
-
                     </div>
                     <div className="project-name">
                       {name}
@@ -50,7 +50,7 @@ class Project extends Component {
           )
       })}
       {this.state.modalActive ?
-        (<LightBox handleClick={this.toggleModal} projects={projects} index={this.state.index}/>)
+        (<LightBox handleClick={this.toggleModal} projects={projects} index={this.state.index} exit={this.handleKeyPress}/>)
         : null }
       </div>
     )
