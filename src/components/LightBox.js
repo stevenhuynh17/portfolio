@@ -22,12 +22,22 @@ class LightBox extends Component {
 
   handleKeyPress = (event) => {
     switch (event.key) {
+      case "Left":
+      case "ArrowLeft":
+        this.updateModal(event, -1)
+        break
+      case "Right":
+      case "ArrowRight":
+        this.updateModal(event, 1)
+        break
+      case "Esc":
       case "Escape":
         this.props.handleClick()
         window.removeEventListener("keydown", this.handleKeyPress)
         break;
       default:
     }
+    event.preventDefault()
   }
 
   updateModal = (event, update) => {
