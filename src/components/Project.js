@@ -11,11 +11,17 @@ class Project extends Component {
     modalActive: false
   }
 
-  toggleModal = (event) => {
-    event.preventDefault()
-    console.log("TESTTTT")
+  toggleModal = (event, index) => {
+    // event.preventDefault()
+    if(document.body.style.overflow === "hidden") {
+      document.body.style.overflow = "scroll"
+    } else {
+      document.body.style.overflow = "hidden"
+    }
+
     this.setState({
-      modalActive: !this.state.modalActive
+      modalActive: !this.state.modalActive,
+      index: index
     })
   }
 
@@ -23,17 +29,16 @@ class Project extends Component {
     const { projects } = this.props
     return(
       <div className="row no-gutters popup-gallery">
-      { projects.map((project) => {
+      { projects.map((project, index) => {
           const { name, img } = project
           return(
             <div className="col-lg-4 col-sm-6 project" key={name}>
-              <button className="portfolio-box" onClick={this.toggleModal}>
+              <button className="portfolio-box" onClick={(e) => this.toggleModal(e, index)}>
                 <img className="img-fluid project-img" src={require("../" + img)} alt=""/>
                 <div className="portfolio-box-caption">
-
                   <div className="portfolio-box-caption-content">
                     <div className="project-category text-faded">
-                      Category
+
                     </div>
                     <div className="project-name">
                       {name}
@@ -44,7 +49,9 @@ class Project extends Component {
             </div>
           )
       })}
-      {this.state.modalActive === false ? <div></div> : <LightBox handleClick={this.toggleModal}/>}
+      {this.state.modalActive ?
+        (<LightBox handleClick={this.toggleModal} projects={projects} index={this.state.index}/>)
+        : null }
       </div>
     )
   }
