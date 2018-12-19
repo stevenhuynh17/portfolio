@@ -13,7 +13,6 @@ class Project extends Component {
 
   toggleModal = (event, index) => {
     // event.preventDefault()
-    console.log("TESTING")
     if(document.body.style.overflow === "hidden") {
       document.body.style.overflow = "scroll"
     } else {

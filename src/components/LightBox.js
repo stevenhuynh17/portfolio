@@ -4,9 +4,17 @@ import ReactDOM from 'react-dom'
 const modalRoot = document.getElementById('root')
 
 class LightBox extends Component {
+  constructor(props) {
+    super(props)
+    this.setWrapperRef = React.createRef()
+    this.state = {
+      current: this.props.projects[this.props.index],
+      index: this.props.index
+    }
+  }
   componentDidMount() {
-    console.log(this.props.projects)
     window.addEventListener("keydown", this.handleKeyPress)
+    window.addEventListener("mousedown", this.handleClickOutside)
 
     this.setState({
       current: this.props.projects[this.props.index],
@@ -15,9 +23,24 @@ class LightBox extends Component {
 
   }
 
-  state = {
-    current: this.props.projects[this.props.index],
-    index: this.props.index
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this.handleKeyPress)
+    window.removeEventListener("mousedown", this.handleClickOutside)
+  }
+
+
+
+  setWrapperRef(node) {
+    console.log("INSIDE", this.setWrapperRef.current)
+    this.setWrapperRef = node
+  }
+
+  handleClickOutside = (event) => {
+    console.log(this.setWrapperRef.current)
+    console.log(event.target)
+    if (this.setWrapperRef.current && !this.setWrapperRef.current.contains(event.target)) {
+      this.props.handleClick()
+    }
   }
 
   handleKeyPress = (event) => {
@@ -33,7 +56,6 @@ class LightBox extends Component {
       case "Esc":
       case "Escape":
         this.props.handleClick()
-        window.removeEventListener("keydown", this.handleKeyPress)
         break;
       default:
     }
@@ -56,20 +78,14 @@ class LightBox extends Component {
     })
   }
 
-  exit = () => {
-    this.props.handleClick()
-    window.removeEventListener("keydown", this.handleKeyPress)
-  }
-
   render() {
-    console.log(this.state.current)
     return ReactDOM.createPortal(
       <div className="modal ">
         <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div className="modal-content">
+          <div className="modal-content" ref={this.setWrapperRef}>
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLongTitle">{this.state.current.name}</h5>
-              <button type="button" className="close" onClick={this.exit} data-dismiss="modal" aria-label="Close">
+              <button type="button" className="close" onClick={this.props.handleClick} data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -80,16 +96,16 @@ class LightBox extends Component {
                 </div>
                 <div className="col-4 row">
                   <div className="">
-                    {this.state.current.description.map((info) => {
+                    {this.state.current.description.map((info, index) => {
                       return(
-                        <p>{info}</p>
+                        <p key={index}>{info}</p>
                       )
                     })}
                   </div>
                   <div className="">
                     {this.state.current.badges.map((badge) => {
                       return(
-                        <span class="badge badge-info mx-1">{badge}</span>
+                        <span className="badge badge-info mx-1" key={badge}>{badge}</span>
                       )
                     })}
                   </div>
