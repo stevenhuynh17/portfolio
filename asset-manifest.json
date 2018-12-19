@@ -1,9 +1,9 @@
 {
-  "main.css": "/static/css/main.91234a04.chunk.css",
-  "main.js": "/static/js/main.f09ecc61.chunk.js",
-  "main.js.map": "/static/js/main.f09ecc61.chunk.js.map",
-  "static/js/1.dfbf0041.chunk.js": "/static/js/1.dfbf0041.chunk.js",
-  "static/js/1.dfbf0041.chunk.js.map": "/static/js/1.dfbf0041.chunk.js.map",
+  "main.css": "/static/css/main.738eefc1.chunk.css",
+  "main.js": "/static/js/main.a482a150.chunk.js",
+  "main.js.map": "/static/js/main.a482a150.chunk.js.map",
+  "static/js/1.73a58e0d.chunk.js": "/static/js/1.73a58e0d.chunk.js",
+  "static/js/1.73a58e0d.chunk.js.map": "/static/js/1.73a58e0d.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/3.png": "/static/media/3.28cf9a3d.png",
@@ -27,8 +27,8 @@
   "static/media/laptop.jpg": "/static/media/laptop.a1f31fae.jpg",
   "static/media/lightbulb.jpg": "/static/media/lightbulb.a3ce0246.jpg",
   "static/media/nearbyNews.jpeg": "/static/media/nearbyNews.4b9c36fd.jpeg",
-  "static/css/main.91234a04.chunk.css.map": "/static/css/main.91234a04.chunk.css.map",
+  "static/css/main.738eefc1.chunk.css.map": "/static/css/main.738eefc1.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.e19f20709e8e6ffed6cca49de92b46aa.js": "/precache-manifest.e19f20709e8e6ffed6cca49de92b46aa.js",
+  "precache-manifest.8508b12b49a9d5895504eb06529be5f8.js": "/precache-manifest.8508b12b49a9d5895504eb06529be5f8.js",
   "service-worker.js": "/service-worker.js"
 }

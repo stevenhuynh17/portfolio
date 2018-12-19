@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/2.47bf26fc.png"
   },
   {
-    "revision": "f09ecc61067cf8c8f954",
-    "url": "/static/css/main.91234a04.chunk.css"
+    "revision": "a482a15006aa7aa8a907",
+    "url": "/static/css/main.738eefc1.chunk.css"
   },
   {
-    "revision": "dfbf0041d10f73246b26",
-    "url": "/static/js/1.dfbf0041.chunk.js"
+    "revision": "73a58e0d339fb1c9a52c",
+    "url": "/static/js/1.73a58e0d.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/static/media/1.c6634afe.png"
   },
   {
-    "revision": "f09ecc61067cf8c8f954",
-    "url": "/static/js/main.f09ecc61.chunk.js"
+    "revision": "a482a15006aa7aa8a907",
+    "url": "/static/js/main.a482a150.chunk.js"
   },
   {
     "revision": "28cf9a3dcac35abf179312c56f26ca89",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/nearbyNews.4b9c36fd.jpeg"
   },
   {
-    "revision": "29471f2f49bb10851d62e392316f2a7e",
+    "revision": "0ee16db964ee35502938f9fe66d6c74d",
     "url": "/index.html"
   }
 ];
