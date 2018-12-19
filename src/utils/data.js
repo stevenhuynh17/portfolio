@@ -33,6 +33,7 @@ export const data = {
     {
       name: "BART Station Locator",
       img: "img/bart.png",
+      github: "https://github.com/stevenhuynh17/udacity_map",
       description: [
         "Front end project that utilizes Google Maps and BART API to display all station locations in the Bay Area",
         "Users can find local attractions, food, and shopping nearby each station through the Yelp API"
@@ -42,6 +43,7 @@ export const data = {
     {
       name: "Car Catalog",
       img: "img/carCatalog.png",
+      github: "https://github.com/stevenhuynh17/udacity_catalog",
       description: [
         "Full-stack project using Python, Flask, SQLAlchemy and deployed through AWS Lightsail",
         "Users login via OAuth with their Google accounts to perform CRUD functions on their respective brands and/or models"
@@ -51,6 +53,7 @@ export const data = {
     {
       name: "Nearby News",
       img: "img/nearbyNews.jpeg",
+      github: "https://github.com/stevenhuynh17/surprisejalapeno",
       description: [
         "Full-stack team project utilizing React, Node.js/Express, MySQL, Watson API and deployed through AWS EC2",
         "Users search news based on the location input where results are displayed in GIFs with visual cues to indicate a sentiment rating"
@@ -60,6 +63,7 @@ export const data = {
     {
       name: "Mobile Flashcards",
       img: "img/flashcards/1.png",
+      github: "https://github.com/stevenhuynh17/udacity_flashCards",
       description: [
         "Front-end project built with React Native, Redux and rendered through Expo",
         "Users get a daily notifcation to study and perform CRUD functions with subjects through AsyncStorage"
@@ -69,6 +73,7 @@ export const data = {
     {
       name: "Would You Rather?",
       img: "img/choiceGame/1.png",
+      github: "https://github.com/stevenhuynh17/udacity_reactChoiceGame",
       description: [
         "Front-end project built with React, Redux and associated libraries",
         "Centralized state management through Redux and navigation between pages with react-router",
@@ -79,6 +84,7 @@ export const data = {
     {
       name: "Geostashing",
       img: "img/geoStashing.jpeg",
+      github: "https://github.com/stevenhuynh17/geostashing",
       description: [
         "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
         "Users can look up random items, transaction occurs online while the seller can stash the sold item in an obscure location"

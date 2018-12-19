@@ -73,22 +73,30 @@ class LightBox extends Component {
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div className="modal-body row">
-              <img className="img-fluid project-img col-6" src={require("../" + this.state.current.img)} alt=""/>
-              <div className="col">
-                {this.state.current.description.map((info) => {
-                  return(
-                    <p>{info}</p>
-                  )
-                })}
+            <div className="modal-body">
+              <div className="row">
+                <div className="col-8">
+                  <img className="img-fluid rounded modal-img" src={require("../" + this.state.current.img)} alt=""/>
+                </div>
+                <div className="col-4 row">
+                  <div className="">
+                    {this.state.current.description.map((info) => {
+                      return(
+                        <p>{info}</p>
+                      )
+                    })}
+                  </div>
+                  <div className="">
+                    {this.state.current.badges.map((badge) => {
+                      return(
+                        <span class="badge badge-info mx-1">{badge}</span>
+                      )
+                    })}
+                  </div>
+                </div>
+
               </div>
-              <div className="">
-                {this.state.current.badges.map((badge) => {
-                  return(
-                    <span class="badge badge-info">{badge}</span>
-                  )
-                })}
-              </div>
+
             </div>
 
             <div className="modal-footer">
