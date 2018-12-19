@@ -100,6 +100,9 @@ class LightBox extends Component {
             </div>
 
             <div className="modal-footer">
+              <a href={this.state.current.github} target="_blank" rel="noopener noreferrer" className="mx-4 github">
+                <i className="fab fa-github fa-2x"></i>
+              </a>
               <button type="button" className="btn btn-secondary" onClick={(e) => this.updateModal(e, -1)}>Prev</button>
               <button type="button" className="btn btn-secondary" onClick={(e) => this.updateModal(e, 1)}>Next</button>
             </div>

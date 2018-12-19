@@ -39,10 +39,10 @@ class Contact extends Component {
                     </button>
                   </div>
                   <div className="social d-flex justify-content-center">
-                    <a href={github} target="_blank" rel="noopener noreferrer" className="mx-2">
+                    <a href={github} target="_blank" rel="noopener noreferrer" className="mx-2 social">
                       <i className="fab fa-github fa-2x"></i>
                     </a>
-                    <a href={linkedin} target="_blank" rel="noopener noreferrer" className="mx-2">
+                    <a href={linkedin} target="_blank" rel="noopener noreferrer" className="mx-2 social">
                       <i className="fab fa-linkedin fa-2x"></i>
                     </a>
                   </div>

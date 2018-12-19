@@ -326,7 +326,7 @@ body {
   letter-spacing: 0.0625em;
 }
 
-a {
+a.social {
   color: #64a19d;
 }
 
@@ -478,5 +478,8 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 100%; */
+}
+
+a.github {
+  color: black;
 }
