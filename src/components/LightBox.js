@@ -16,8 +16,8 @@ class LightBox extends Component {
   }
 
   state = {
-    current: "",
-    index: ""
+    current: this.props.projects[this.props.index],
+    index: this.props.index
   }
 
   handleKeyPress = (event) => {
@@ -64,8 +64,8 @@ class LightBox extends Component {
   render() {
     console.log(this.state.current)
     return ReactDOM.createPortal(
-      <div className="modal">
-        <div className="modal-dialog modal-dialog-centered" role="document">
+      <div className="modal ">
+        <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLongTitle">{this.state.current.name}</h5>
@@ -73,9 +73,24 @@ class LightBox extends Component {
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div className="modal-body">
-              ...
+            <div className="modal-body row">
+              <img className="img-fluid project-img col-6" src={require("../" + this.state.current.img)} alt=""/>
+              <div className="col">
+                {this.state.current.description.map((info) => {
+                  return(
+                    <p>{info}</p>
+                  )
+                })}
+              </div>
+              <div className="">
+                {this.state.current.badges.map((badge) => {
+                  return(
+                    <span class="badge badge-info">{badge}</span>
+                  )
+                })}
+              </div>
             </div>
+
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" onClick={(e) => this.updateModal(e, -1)}>Prev</button>
               <button type="button" className="btn btn-secondary" onClick={(e) => this.updateModal(e, 1)}>Next</button>
