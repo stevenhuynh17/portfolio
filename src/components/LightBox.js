@@ -80,40 +80,41 @@ class LightBox extends Component {
 
   render() {
     return ReactDOM.createPortal(
-      <div className="modal ">
+      <div className="modal">
         <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div className="modal-content" ref={this.setWrapperRef}>
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLongTitle">{this.state.current.name}</h5>
-              <button type="button" className="close" onClick={this.props.handleClick} data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body">
-              <div className="row">
-                <div className="col-8">
-                  <img className="img-fluid rounded modal-img" src={require("../" + this.state.current.img)} alt=""/>
-                </div>
-                <div className="col-4 row">
-                  <div className="">
-                    {this.state.current.description.map((info, index) => {
-                      return(
-                        <p key={index}>{info}</p>
-                      )
-                    })}
-                  </div>
-                  <div className="">
-                    {this.state.current.badges.map((badge) => {
-                      return(
-                        <span className="badge badge-info mx-1" key={badge}>{badge}</span>
-                      )
-                    })}
-                  </div>
-                </div>
-
+            <div className="container-fluid">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLongTitle">{this.state.current.name}</h5>
+                <button type="button" className="close" onClick={this.props.handleClick} data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-
+              <div className="modal-body">
+                <div className="row">
+                  <div className="col-sm-8">
+                    <img className="img-fluid rounded modal-img" src={require("../" + this.state.current.img)} alt=""/>
+                  </div>
+                  <div className="col-sm-4">
+                    <div className="col">
+                      {this.state.current.description.map((info, index) => {
+                        return(
+                          <p key={index}>{info}</p>
+                        )
+                      })}
+                    </div>
+                    <div className="col">
+                      {this.state.current.badges.map((badge) => {
+                        return(
+                          <span className="badge badge-info mx-1" key={badge}>{badge}</span>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
 
             <div className="modal-footer">
               <a href={this.state.current.github} target="_blank" rel="noopener noreferrer" className="mx-4 github">
