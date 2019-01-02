@@ -92,10 +92,10 @@ class LightBox extends Component {
               </div>
               <div className="modal-body">
                 <div className="row">
-                  <div className="col-sm-8">
+                  <div className="col-sm-7">
                     <img className="img-fluid rounded modal-img" src={require("../" + this.state.current.img)} alt=""/>
                   </div>
-                  <div className="col-sm-4">
+                  <div className="col-sm-5">
                     <div className="col">
                       {this.state.current.description.map((info, index) => {
                         return(

@@ -432,10 +432,6 @@ footer {
   font-size: 18px;
 }
 
-.portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
-}
-
 .portfolio-box:focus {
   outline: none;
 }
@@ -447,7 +443,18 @@ footer {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+  .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+  }
 }
+
+@media (max-width: 576px) {
+  .portfolio-box .portfolio-box-caption {
+    opacity: 1;
+    border: white;
+  }
+}
+
 
 .project-img {
   height: 21em;
@@ -466,11 +473,11 @@ footer {
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.3);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .modal-lg {
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 .modal-img {
@@ -484,6 +491,11 @@ a.github {
   color: black;
 }
 
-@media (max-width: 767.98px) {
+.modal-dialog {
+  overflow-y: initial !important;
+}
 
+.modal-body {
+  height: 40rem;
+  overflow-y: auto;
 }

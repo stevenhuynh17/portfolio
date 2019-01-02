@@ -87,7 +87,10 @@ export const data = {
       github: "https://github.com/stevenhuynh17/geostashing",
       description: [
         "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
-        "Users can look up random items, transaction occurs online while the seller can stash the sold item in an obscure location"
+        "Users can look up random items, transaction occurs online while the seller can stash the sold item in an obscure location",
+        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
+        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
+        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL"
       ],
       badges: ["react", "node-js", "express", "postgres-sql", "javaScript", "html5", "ccs3"]
     },

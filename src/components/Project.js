@@ -32,7 +32,7 @@ class Project extends Component {
       { projects.map((project, index) => {
           const { name, img } = project
           return(
-            <div className="col-sm-4 project" key={name}>
+            <div className="col-6 col-md-4 project" key={name}>
               <button className="portfolio-box" onClick={(e) => this.toggleModal(e, index)}>
                 <img className="img-fluid project-img" src={require("../" + img)} alt=""/>
                 <div className="portfolio-box-caption">
