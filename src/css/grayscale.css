@@ -496,6 +496,6 @@ a.github {
 }
 
 .modal-body {
-  height: 40rem;
+  height: 60vh;
   overflow-y: auto;
 }
