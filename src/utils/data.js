@@ -35,8 +35,9 @@ export const data = {
       img: "img/bart.png",
       github: "https://github.com/stevenhuynh17/udacity_map",
       description: [
-        "Front end project that utilizes Google Maps and BART API to display all station locations in the Bay Area",
-        "Users can find local attractions, food, and shopping nearby each station through the Yelp API"
+        "Front end project that utilizes Knockout.js, Google Maps, and BART API to display all station locations in the Bay Area.",
+        "Users can click on each individual marker or search for stations to find the station location.",
+        "Each location marker links to local attractions, food, and shopping nearby each station through the Yelp API."
       ],
       badges: ["Knockout.js", "googlemaps-api", "bart-api", "yelp-api", "javaScript", "html5", "ccs3"]
     },
@@ -45,8 +46,8 @@ export const data = {
       img: "img/carCatalog.png",
       github: "https://github.com/stevenhuynh17/udacity_catalog",
       description: [
-        "Full-stack project using Python, Flask, SQLAlchemy and deployed through AWS Lightsail",
-        "Users login via OAuth with their Google accounts to perform CRUD functions on their respective brands and/or models"
+        "Full-stack project using Python, Flask, SQLAlchemy and deployed through AWS Lightsail.",
+        "Users login via OAuth with their Google accounts to perform CRUD functions to generate new car brands and/or modals in their profile that will be shared to the public in order to allow users to make informed decisions when shopping for a new vehicle."
       ],
       badges: ["Python", "Flask", "SQLAlchemy", "OAuth", "AWS", "html5", "ccs3"]
     },
@@ -55,8 +56,8 @@ export const data = {
       img: "img/nearbyNews.jpeg",
       github: "https://github.com/stevenhuynh17/surprisejalapeno",
       description: [
-        "Full-stack team project utilizing React, Node.js/Express, MySQL, Watson API and deployed through AWS EC2",
-        "Users search news based on the location input where results are displayed in GIFs with visual cues to indicate a sentiment rating"
+        "Full-stack team project utilizing React, Node.js/Express, MySQL, Watson API and deployed through AWS EC2.",
+        "Users search news based on the desired location where results are displayed in GIFs with visual cues to let the reader be aware of how negative or positive the article's contents are, according to Watson."
       ],
       badges: ["React", "Node.js", "Express", "MySQL", "AWS", "watson-api", "javaScript", "html5", "ccs3"]
     },
@@ -65,8 +66,9 @@ export const data = {
       img: "img/flashcards/1.png",
       github: "https://github.com/stevenhuynh17/udacity_flashCards",
       description: [
-        "Front-end project built with React Native, Redux and rendered through Expo",
-        "Users get a daily notifcation to study and perform CRUD functions with subjects through AsyncStorage"
+        "Front-end mobile project built with React Native and Redux.",
+        "Users get a daily notifcation to study the created decks that will provide a grade at the end.",
+        "Users can perform CRUD functions through AsyncStorage to further customize each deck and subject."
       ],
       badges: ["react-native", "redux", "android", "ios", "javaScript", "html5", "ccs3"]
     },
@@ -75,9 +77,9 @@ export const data = {
       img: "img/choiceGame/1.png",
       github: "https://github.com/stevenhuynh17/udacity_reactChoiceGame",
       description: [
-        "Front-end project built with React, Redux and associated libraries",
-        "Centralized state management through Redux and navigation between pages with react-router",
-        "Users can login to participate in the polls and perform CRUD functions"
+        "Front-end project built with React, Redux and associated libraries.",
+        "Centralized state management through Redux and navigation between pages with react-router.",
+        "Users can login to participate in the polls and perform CRUD functions."
       ],
       badges: ["react", "redux", "javaScript", "html5", "ccs3"]
     },
@@ -86,11 +88,8 @@ export const data = {
       img: "img/geoStashing.jpeg",
       github: "https://github.com/stevenhuynh17/geostashing",
       description: [
-        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
-        "Users can look up random items, transaction occurs online while the seller can stash the sold item in an obscure location",
-        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
-        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL",
-        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL"
+        "Full-stack team project utilizing React, Node.js/Express, and Postgres SQL.",
+        "Users can search for merchandise, negotiate a price with the seller, then process the transaction online where the item(s) can be picked up at a designated and obscure location."
       ],
       badges: ["react", "node-js", "express", "postgres-sql", "javaScript", "html5", "ccs3"]
     },
