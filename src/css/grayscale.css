@@ -477,11 +477,11 @@ footer {
 }
 
 .modal-lg {
-  /* max-width: 80%; */
+  max-width: 80rem;
 }
 
 .modal-img {
-  height: 23em;
+  height: -webkit-fill-available;
   display: block;
   margin-left: auto;
   margin-right: auto;
